@@ -44,7 +44,6 @@
 		D2DE7700274D83DA00C8D96E = {
 			isa = PBXGroup;
 			children = (
-				D2DE7722274D87E800C8D96E /* CountryViewController.swift */,
 				D2DE770B274D83DA00C8D96E /* flagsAction */,
 				D2DE770A274D83DA00C8D96E /* Products */,
 			);
@@ -63,6 +62,7 @@
 			children = (
 				D2DE770C274D83DA00C8D96E /* AppDelegate.swift */,
 				D2DE770E274D83DA00C8D96E /* SceneDelegate.swift */,
+				D2DE7722274D87E800C8D96E /* CountryViewController.swift */,
 				D2DE7710274D83DA00C8D96E /* ViewController.swift */,
 				D2DE7720274D848B00C8D96E /* Country.swift */,
 				D2DE7712274D83DB00C8D96E /* Main.storyboard */,

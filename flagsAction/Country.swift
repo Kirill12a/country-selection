@@ -17,6 +17,6 @@ class Country{
         self.name = name
         self.capital = capital
         
-        image = UIImage(named: self.name) ?? UIImage(named: "rus")!
+        image = UIImage(named: self.name) ?? UIImage(named: "help")!
     }
 }

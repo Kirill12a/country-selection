@@ -15,14 +15,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let india = Country(name: "india", capital: "new dalhi")
+        let india = Country(name: "India", capital: "New Delhi)")
         countryies.append(india)
-        let bel   =   Country(name: "bel", capital: "Minks")
+        let bel   =   Country(name: "Belarus", capital: "Minks")
         countryies.append(bel)
-        let chine = Country(name: "chine", capital: "Pekin")
+        let chine = Country(name: "Chine", capital: "Pekin")
         countryies.append(chine)
-        let rus = Country(name: "rus", capital: "Moscov")
+        let rus = Country(name: "Russia", capital: "Moscov")
         countryies.append(rus)
+        let usa = Country(name: "USA", capital: "Washington")
+        countryies.append(usa)
+        let arab = Country(name: "United Arab Emirates", capital: "Abu Dhabi")
+        countryies.append(arab)
         
     }
 }
@@ -53,6 +57,14 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         }
     }
     
-    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1.0)
+        UIView.animate(withDuration: 1.5,
+                       animations: {
+            cell.layer.transform = CATransform3DMakeScale(1.0, 1.0, 1.0)
+        }, completion: nil)
+        
+    }
+
 }
 
